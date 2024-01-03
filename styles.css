@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Superior title';
+    src: url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e93de663338324ebd42639c_SuperiorTitle-Medium.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e93de6696104621467def90_SuperiorTitle-Medium.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e93de66961046b5d17def91_SuperiorTitle-Medium.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e25238aacccd12e6712d7e8_Superior%20Title%20-%20Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Pitchsans Semibold';
+    src: url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48a4fbaea249d25baf9_pitch-sans-web-semibold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48bab1cf8da95a81c3c_pitch-sans-web-semibold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48bab1cf8da95a81c3c_pitch-sans-web-semibold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48bab1cf8da95a81c3c_pitch-sans-web-semibold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48a8a0cee09608541d8_pitch-sans-web-semibold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48a8a0cee09608541d8_pitch-sans-web-semibold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e2523cbc1ca1d0410436ffd_PitchSans-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Pitchsans Regular';
+    src: url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa5e7ab1cf843e0a81ef9_PitchSansWeb-Regular.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa5e7f99d7c7d25778625_PitchSansWeb-Regular.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa5e74fbaea7b2d25bfa0_PitchSansWeb-Regular.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e2523ca5cbbd6ece025370b_PitchSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+body {
+    color: black;
+    letter-spacing: 0;
+    background-color: #899D7A;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, auto;
+    font-family: Pitchsans Regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.icon {
+    position: absolute;
+    height: 75px;
+    top: 21px;
+    left: 20px;
+
+
+}
+.header{
+    height: 100px;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    margin: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 22px;
+    font-family: 'Pitchsans Semibold', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.title {
+    color: #ffffff;
+    margin-top: 5rem;
+    margin-left: 15%;
+    font-family: 'Superior title', Times New Roman, sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.paragraph {
+    max-width: 80%;
+    color: #ffffff;
+    margin-left: 15%;
+    font-family: Pitchsans Regular, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.white-line {
+    width: 80%;
+    height: 2px;
+    margin-top: 5%;
+    margin-left: 15%;
+    background-color: #ffffff;
+}
+
+
+.bottom {
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+
+
+}
+
+.bot{
+    height: 75px;
+
+}
+.bot2{
+    height: 60px;
+    margin-bottom: 5px;
+
+}
+
+.bot:hover {
+    filter: invert(73%) sepia(66%) saturate(2907%) hue-rotate(13deg) brightness(105%) contrast(95%);
+}
+
+
+.bot2:hover {
+    filter: invert(31%) sepia(95%) saturate(3936%) hue-rotate(199deg) brightness(80%) contrast(100%);
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease forwards;
+    animation-delay: 0.25s;
+}
+
+
+@keyframes reverseSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.icon {
+    animation: reverseSpin 1.5s linear forwards;
+}
+
+
+

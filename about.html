@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+
+
+<div class="header ">
+    <a href="index.html"><img src="icon.png" alt="Home Icon" class="icon"></a>
+    <nav class="navbar fade-in">
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+
+<div class="title fade-in">
+    <h1> Me!</h1>
+</div>
+
+<div class="about fade-in">
+
+
+    <div class="paragraph">
+
+        <p> Hi! I'm Chirath Illukpitiya from Nashville, Tennessee. Right now, I'm a Junior at the University of Rochester studying CS!</p>
+        <p> Helping others is something I’ve always loved, whether it be through teaching or volunteering. There’s a unique happiness I get when I make someone smile. When I started college, I came to love CS and software. Software has incredible reach, capable of touching countless lives.  Using software, I just want to extend my helping hand to as many people as I can, even if it’s in the smallest of ways!</p>
+        <p> Some other things I love is skateboarding, chess, going gym, and playing with my dog, Simba! I love meeting new people, so feel free to reach out!</p>
+
+    </div>
+
+    <div class="image-container">
+        <img src="me.jpg" alt="Description of Image" class="rounded-image">
+    </div>
+
+</div>
+
+<button id="viewResumeButton" class="textButton fade-in">View Resume</button>
+
+<div id="resumeContainer" style="display: none;">
+    <img src="resume.jpeg" alt="Resume" style="width:45%; height:auto;">
+</div>
+
+
+<script>
+    document.getElementById("viewResumeButton").onclick = function() {
+        var resumeContainer = document.getElementById("resumeContainer");
+
+        if (resumeContainer.style.display === "none") {
+            resumeContainer.style.display = "block";
+            resumeContainer.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            resumeContainer.style.display = "none";
+        }
+    };
+</script>
+
+
+</body>
+</html>
+

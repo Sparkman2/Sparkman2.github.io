@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Superior title';
+    src: url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e93de663338324ebd42639c_SuperiorTitle-Medium.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e93de6696104621467def90_SuperiorTitle-Medium.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e93de66961046b5d17def91_SuperiorTitle-Medium.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e25238aacccd12e6712d7e8_Superior%20Title%20-%20Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Pitchsans Semibold';
+    src: url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48a4fbaea249d25baf9_pitch-sans-web-semibold.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48bab1cf8da95a81c3c_pitch-sans-web-semibold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48bab1cf8da95a81c3c_pitch-sans-web-semibold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48bab1cf8da95a81c3c_pitch-sans-web-semibold.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48a8a0cee09608541d8_pitch-sans-web-semibold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa48a8a0cee09608541d8_pitch-sans-web-semibold.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e2523cbc1ca1d0410436ffd_PitchSans-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'Pitchsans Regular';
+    src: url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa5e7ab1cf843e0a81ef9_PitchSansWeb-Regular.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa5e7f99d7c7d25778625_PitchSansWeb-Regular.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e8aa5e74fbaea7b2d25bfa0_PitchSansWeb-Regular.woff') format('woff'), url('https://uploads-ssl.webflow.com/5e2520252e290c852ed89624/5e2523ca5cbbd6ece025370b_PitchSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+body {
+    color: #899D7A;
+    letter-spacing: 0;
+    background-color: #899D7A;
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, auto;
+    font-family: Pitchsans Regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.icon {
+    position: absolute;
+    height: 75px;
+    top: 21px;
+    left: 20px;
+
+
+}
+.header{
+    height: 100px;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    margin: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 22px;
+    font-family: 'Pitchsans Semibold', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.activites{
+    margin-top: 100px;
+}
+
+.skills{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title{
+    color: #f8f8f8;
+    letter-spacing: 0;
+    font-family: Superior title, Times New Roman, sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 220px;
+}
+
+.white-line {
+    width: 60%;
+    height: 2px;
+    margin-left: 225px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+
+.accordion-button {
+    margin-left: 220px;
+    background-color: #899D7A;
+    color: white;
+    padding: 15px;
+    width: 70%;
+    text-align: left;
+    border: 2px white solid;
+    outline: none;
+    font-family: 'Pitchsans Semibold', sans-serif;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.accordion-title {
+    font-family: 'Superior title', sans-serif;
+    font-size: 32px;
+
+}
+
+.accordion-subtitle {
+    font-family: 'Pitchsans Semibold', sans-serif;
+    font-size: 24px;
+    padding-top: 5px;
+
+}
+
+.accordion-icon img {
+    width: 30px;
+    height: auto;
+    transition: transform .5s ease-in;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transform-origin: center;
+}
+
+
+.accordion-button.active .accordion-icon img {
+    transform: rotate(45deg);
+}
+
+
+.accordion-content {
+    margin-left: 220px;
+    width: 69.93%;
+    background-color: #63725a;
+    border: 1px white solid;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+
+.accordion-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.accordion-content ul li {
+    padding-left: 50px;
+    background-image: url('diamond.png');
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    background-size: 15px 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accordion-content ul li {
+    padding-left: 50px;
+    background-image: url('diamond.png');
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    background-size: 15px 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+}
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease forwards;
+    animation-delay: 0.25s;
+}
+
+
+@keyframes reverseSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.icon {
+    animation: reverseSpin 1.5s linear forwards;
+}
+
