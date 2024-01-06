@@ -39,9 +39,8 @@ body {
     height: 75px;
     top: 21px;
     left: 20px;
-
-
 }
+
 .header{
     height: 100px;
 }
@@ -65,7 +64,7 @@ body {
 .title {
     color: #ffffff;
     margin-top: 5rem;
-    margin-left: 15%;
+    margin-left: 10%;
     font-family: 'Superior title', Times New Roman, sans-serif;
     font-size: 3rem;
     line-height: 1.2;
@@ -74,7 +73,7 @@ body {
 .paragraph {
     max-width: 80%;
     color: #ffffff;
-    margin-left: 15%;
+    margin-left: 10%;
     font-family: Pitchsans Regular, sans-serif;
     font-size: 1.5rem;
     line-height: 1.6;
@@ -84,7 +83,7 @@ body {
     width: 80%;
     height: 2px;
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 10%;
     background-color: #ffffff;
 }
 
@@ -116,6 +115,7 @@ body {
 .bot2:hover {
     filter: invert(31%) sepia(95%) saturate(3936%) hue-rotate(199deg) brightness(80%) contrast(100%);
 }
+
 
 @keyframes fadeInAnimation {
     from {
@@ -149,5 +149,62 @@ body {
     animation: reverseSpin 1.5s linear forwards;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        height: 30px; /* smaller icon for mobile */
+        top: 23px;
+        left: 10px;
+    }
+
+    .header {
+        height: 100px; /* adjust header size for mobile */
+    }
+
+    .navbar {
+        top: 15px;
+        right: 15px;
+        margin: 10px;
+    }
+
+    .navbar a {
+        margin-left: 15px;
+        font-size: 12px; /* smaller font size for mobile */
+    }
+
+    .title {
+        margin-top: 3rem;
+        margin-left: 10%;
+        font-size: 2rem; /* smaller title for mobile */
+    }
+
+    .paragraph {
+        max-width: 95%;
+        margin-left: 5%;
+        font-size: 1rem; /* smaller text for mobile */
+    }
+
+    .white-line {
+        width: 95%;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    .bottom {
+        bottom: 0px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .bot{
+        height: 50px; /* adjust social media icons for mobile */
+    }
+
+
+    .bot2 {
+        height: 39px; /* adjust social media icons for mobile */
+    }
+
+}
 
 
