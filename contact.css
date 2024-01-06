@@ -63,10 +63,11 @@ body {
     font-weight: 600;
 }
 
+
 .title {
     color: #f8f8f8;
     margin-top: 5rem;
-    margin-left: 15%;
+    margin-left: 10%;
     font-family: 'Superior title', Times New Roman, sans-serif;
     font-size: 3rem;
     line-height: 1;
@@ -74,9 +75,9 @@ body {
 
 .title2{
     color: #f8f8f8;
-    margin-top: 5rem;
-    margin-left: 15%;
-    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 10%;
+    font-size: 1.2rem;
     line-height: 1.2;
     font-family:'Pitchsans Semibold', sans-serif;
 
@@ -85,7 +86,7 @@ body {
 .paragraph {
     max-width: 80%;
     color: #f8f8f8;
-    margin-left: 15%;
+    margin-left: 10%;
     font-family: Pitchsans Regular, sans-serif;
     font-size: 1.25rem;
     line-height: 1.6;
@@ -151,3 +152,62 @@ body {
 .icon {
     animation: reverseSpin 1.5s linear forwards;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        height: 30px; /* smaller icon for mobile */
+        top: 23px;
+        left: 10px;
+    }
+
+
+    .navbar {
+        top: 15px;
+        right: 15px;
+        margin: 10px;
+    }
+
+    .navbar a {
+        margin-left: 15px;
+        font-size: 12px; /* smaller font size for mobile */
+    }
+
+    .title {
+        margin-top: 3rem;
+        margin-left: 10%;
+        font-size: 2rem; /* smaller title for mobile */
+    }
+
+    .paragraph {
+        max-width: 95%;
+        margin-left: 5%;
+        font-size: 1rem; /* smaller text for mobile */
+    }
+
+    .white-line {
+        width: 95%;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    .bottom {
+        bottom: 5px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .bot{
+        height: 50px; /* adjust social media icons for mobile */
+    }
+
+
+    .bot2 {
+        height: 39px; /* adjust social media icons for mobile */
+    }
+
+}
+
+
+
+
