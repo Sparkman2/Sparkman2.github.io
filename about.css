@@ -72,7 +72,7 @@ body {
 .title {
     color: #f8f8f8;
     margin-top: 5rem;
-    margin-left: 15%;
+    margin-left: 10%;
     font-family: 'Superior title', Times New Roman, sans-serif;
     font-size: 3rem;
     line-height: 1;
@@ -98,7 +98,7 @@ body {
 .paragraph {
     max-width: 45%;
     color: #f8f8f8;
-    margin-left: 15%;
+    margin-left: 10%;
     font-family: Pitchsans Regular, sans-serif;
     font-size: 1.35rem;
     line-height: 1.6;
@@ -112,7 +112,7 @@ body {
     text-decoration: underline;
     font-family: Superior title, Times New Roman, sans-serif;
     font-size: 3rem;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 #resumeContainer {
