@@ -184,17 +184,20 @@ body {
 
 .list{
     display: flex;
+    overflow-x: auto;
 }
 
 .list2{
     display: flex;
     margin-top: 150px;
+    overflow-x: auto;
 }
 
 .list4{
     display: flex;
     margin-top: 150px;
     margin-bottom: 100px;
+    overflow-x: auto;
 }
 
 
@@ -256,6 +259,151 @@ body {
 
 .icon {
     animation: reverseSpin 1.5s linear forwards;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        height: 30px; /* smaller icon for mobile */
+        top: 23px;
+        left: 10px;
+    }
+
+    .header {
+        height: 100px; /* adjust header size for mobile */
+    }
+
+    .navbar {
+        top: 15px;
+        right: 15px;
+        margin: 10px;
+    }
+
+    .navbar a {
+        margin-left: 15px;
+        font-size: 12px; /* smaller font size for mobile */
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+      "title number"
+      "line line"
+      "description description";
+        max-width: 300px;
+        margin: 50px auto;
+        padding-left: 0px;
+        padding-top: 15px;
+        color: white;
+    }
+
+    .project-grid {
+
+        display: grid;
+        grid-template-areas:
+      "title number"
+      "line line"
+      "description description";
+        grid-template-columns: 6fr 2fr;
+        align-items: start;
+        justify-items: stretch;
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+
+    .project-title-area {
+        grid-area: title;
+        padding-top: 15px;
+        font-size: 10px;
+        font-family: Superior title, Times New Roman, sans-serif;
+        position: relative;
+        letter-spacing: 1px;
+        line-height: 20px;
+
+    }
+
+    .project-title-area::after {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 25px;
+        bottom: 8px;
+        width: 2px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .project-number-area {
+        grid-area: number;
+        text-align: right;
+        padding-right: 10px;
+        position: relative;
+        top: 25px;
+    }
+
+    .project-number{
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+
+    .white-line {
+        grid-area: line;
+        border: none;
+        height: 2px;
+        background-color: #fff;
+        width: 100%;
+        margin: -20px 0;
+        position: relative;
+        z-index: 0;
+    }
+
+    .project-description-area {
+        grid-area: description;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+
+    .video-container {
+
+        padding: 30px;
+        flex-shrink: 0;
+        width: 600px;
+        height: auto;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: auto;
+        border: 10px white solid;
+        border-radius: 20px;
+
+
+    }
+
+    .list{
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .list2{
+        display: flex;
+        overflow-x: auto;
+        margin-top: 50px;
+    }
+
+    .list4{
+        display: flex;
+        overflow-x: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
 }
 
 
