@@ -81,15 +81,6 @@ body {
     margin-left: 220px;
 }
 
-.white-line {
-    width: 60%;
-    height: 2px;
-    margin-left: 225px;
-    background-color: white;
-    margin-top: 100px;
-    margin-bottom: 10px;
-}
-
 
 .accordion-button {
     margin-left: 220px;
@@ -231,4 +222,3 @@ a:link, a:visited, a:hover, a:active {
 .icon {
     animation: reverseSpin 1.5s linear forwards;
 }
-
